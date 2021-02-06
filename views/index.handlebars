@@ -20,9 +20,9 @@
   <h3 class="submitFont">Krabby Patties Devoured</h3>"
   <ul>
     {{#each patty}}
-    {{#unless devoured}}
+    {{#if devoured}}
     {{> patties/devoured devoured=false}}
-    {{/unless}}
+    {{/if}}
     {{/each}}
   </ul>
 
