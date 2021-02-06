@@ -32,4 +32,3 @@ router.post('/patty/eat/:id', function (req, res) {
 });
 
 module.exports = router;
-console.log()

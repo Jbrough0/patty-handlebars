@@ -15,7 +15,7 @@ var orm =
     {
         connection.query('INSERT INTO patty SET ?',
         {
-            pattie_name: patty_name,
+            patty_name: patty_name,
             devoured: false,
         }, function(err, result)
         {
