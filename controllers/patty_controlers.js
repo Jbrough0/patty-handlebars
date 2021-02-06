@@ -20,6 +20,7 @@ router.get('/index', function (req, res) {
   });
 });
 router.post('/patty/create', function (req, res) {
+  console.log(req.body)
   patty.insertOne(req.body.patty_name, function () {
     res.redirect('/index');
   });
