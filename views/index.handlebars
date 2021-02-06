@@ -6,6 +6,7 @@
       <ul>
         {{#each patty}}
         {{#unless devoured}}
+        {{> patties/devoured devoured=true}}
         {{/unless}}
         {{/each}}
       </ul>
@@ -20,6 +21,7 @@
   <ul>
     {{#each patty}}
     {{#unless devoured}}
+    {{> patties/devoured devoured=false}}
     {{/unless}}
     {{/each}}
   </ul>
