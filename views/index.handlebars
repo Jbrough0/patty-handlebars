@@ -20,9 +20,9 @@
   <h3 class="submitFont">Krabby Patties Devoured</h3>"
   <ul>
     {{#each patty}}
-    {{#if devoured}}
+    {{#unless devoured}}
     {{> patties/devoured devoured=false}}
-    {{/if}}
+    {{/unless}}
     {{/each}}
   </ul>
 
@@ -48,3 +48,9 @@
         </center>
 
         </form>
+
+
+
+
+
+        
